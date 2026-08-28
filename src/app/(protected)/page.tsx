@@ -1,7 +1,7 @@
 import { CompareTable } from "@/components/CompareTable";
 import { HeroTelemetry } from "@/components/HeroTelemetry";
 import { JobSection } from "@/components/JobSection";
-import { QuoteWall } from "@/components/QuoteWall";
+import { RosterChart } from "@/components/RosterChart";
 import { SiteNav } from "@/components/SiteNav";
 import { JOBS } from "@/data/jobs";
 
@@ -12,7 +12,7 @@ export default function HomePage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="hero-watercolor-image"
-          src="/brand/watercolor-pad.png"
+          src="/brand/equinix-watercolor-header.png"
           alt=""
         />
         <SiteNav />
@@ -23,24 +23,28 @@ export default function HomePage() {
           <HeroTelemetry />
           <section className="hero">
             <div>
-              <p className="eyebrow">A proactive agent for every Datadog rep</p>
-              <h1>The agents that work while your reps sell.</h1>
+              <p className="eyebrow">A proactive agent for every Equinix seller</p>
+              <h1>The agents that work while your sellers sell.</h1>
               <p className="hero-intro">
-                Grok Bot listens to calls, watches the inbox, and researches
-                accounts in the background. Work triggers it — not another
-                prompt.
+                Grok Bot starts from approved sales signals, works in the
+                background, and prepares drafts for seller review. Nothing
+                sends without the seller.
               </p>
             </div>
           </section>
 
+          <RosterChart />
+
           <section className="usecase-framing">
             <p className="eyebrow">Three sample use cases</p>
             <h2>
-              Grok Bot gives every seller their own fleet of always-available
-              agent teammates. Anything your sellers do today can be done
-              through Grok Bot.
+              See the signal, the agent at work, and the artifact ready for
+              review.
             </h2>
-            <p>These are three examples from millions — not the boundary.</p>
+            <p>
+              These are illustrative workflows built from approved Equinix
+              context and public sources.
+            </p>
           </section>
 
           <div className="metric-grid">
@@ -69,24 +73,23 @@ export default function HomePage() {
 
       <div className="orbit-break" aria-hidden>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/brand/watercolor-orbit.png" alt="" />
+        <img src="/brand/equinix-watercolor-header.png" alt="" />
       </div>
 
       <div className="report">
         <CompareTable />
-        <QuoteWall />
       </div>
 
       <footer className="site-footer">
         <div>
-          <p className="footer-title">Cursor for Datadog</p>
-          <p>Grok Bot for Datadog sales</p>
+          <p className="footer-title">Equinix x SpaceXAI</p>
+          <p>Grok Bot for Equinix sales</p>
         </div>
         <address className="footer-contact">
-          <p>Datadog&apos;s existing Cursor contact</p>
-          <strong>Madeline Ingleby</strong>
-          <a href="mailto:madeline.ingleby@cursor.com">
-            madeline.ingleby@cursor.com
+          <p>Your Cursor contact</p>
+          <strong>Tyler Pickler</strong>
+          <a href="mailto:tyler.pickler@cursor.com">
+            tyler.pickler@cursor.com
           </a>
         </address>
       </footer>

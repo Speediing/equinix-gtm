@@ -25,16 +25,25 @@ function Box({
   const className = chief ? "org-box is-chief" : "org-box";
   const body = (
     <>
-      <span
-        className="org-avatar"
-        style={{
-          background: bot.color,
-          color: isLight(bot.color) ? "#111" : "#fff",
-        }}
-        aria-hidden
-      >
-        {initials(bot)}
-      </span>
+      {chief ? (
+        <span
+          className="org-avatar"
+          style={{
+            background: bot.color,
+            color: isLight(bot.color) ? "#111" : "#fff",
+          }}
+          aria-hidden
+        >
+          {initials(bot)}
+        </span>
+      ) : (
+        <span className="org-computer" style={{ color: bot.color }} aria-hidden>
+          <i className="org-computer-bar" />
+          <i />
+          <i />
+          <b />
+        </span>
+      )}
       <span className="org-name">{bot.name}</span>
       <span className="org-blurb">{bot.blurb}</span>
     </>
@@ -59,11 +68,11 @@ export function RosterChart() {
 
   return (
     <section id="roster" className="roster">
-      <h2>A background team for every sales rep</h2>
+      <p className="eyebrow">Eight agents, eight computers</p>
+      <h2>A background fleet for every Equinix seller</h2>
       <p className="section-lede">
-        The work itself is the trigger. A call starts, an email lands, or an
-        account enters the list — and the right agent picks it up. They keep
-        working after the laptop closes. Drafts stay drafts until the rep sends.
+        An approved signal starts the work. Each agent uses its own computer
+        and prepares an artifact. Drafts stay drafts until the seller approves.
       </p>
 
       <div className="org" role="tree">
