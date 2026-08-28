@@ -2,10 +2,25 @@ import { NextResponse } from "next/server";
 import { AUTH_COOKIE, passwordMatches, sessionToken } from "@/lib/auth";
 
 function safeNext(value: string | null | undefined): string {
-  if (!value || !value.startsWith("/") || value.startsWith("//")) {
+  if (
+    !value ||
+    !value.startsWith("/") ||
+    value.startsWith("//") ||
+    value.includes("\\") ||
+    value.toLowerCase().includes("%5c")
+  ) {
     return "/";
   }
-  return value;
+  try {
+    const base = new URL("https://site.invalid");
+    const target = new URL(value, base);
+    if (target.origin !== base.origin) {
+      return "/";
+    }
+    return `${target.pathname}${target.search}${target.hash}`;
+  } catch {
+    return "/";
+  }
 }
 
 export async function POST(request: Request) {
