@@ -29,9 +29,9 @@ export const HERO_JOBS = [
       "Checking approved context and preparing an outreach draft for seller review.",
     result: "Outbound draft ready for review",
     userMessage:
-      "Prepare outreach around Serve Better and Run Simpler using only the approved account and product context.",
+      "Draft outreach on Serve Better and Run Simpler using only approved context.",
     botMessage:
-      "Draft ready. I marked the open context as gaps and held the send for your approval.",
+      "Draft ready. I labeled the missing context and held the send for your approval.",
   },
   {
     name: "Account Research",
@@ -42,7 +42,7 @@ export const HERO_JOBS = [
       "Separating approved account context from dated public sources for a reviewable brief.",
     result: "Sourced account brief ready",
     userMessage:
-      "Prepare a sourced account brief and keep public information separate from approved account context.",
+      "Prepare a sourced brief. Keep public and approved account context separate.",
     botMessage:
       "Brief ready. Sources and open questions are labeled for your review.",
   },
@@ -55,7 +55,7 @@ export const HERO_JOBS = [
       "Checking approved call notes and product language before preparing the follow-up draft.",
     result: "Follow-up draft ready for review",
     userMessage:
-      "Draft a follow-up using approved language for Equinix Fabric and interconnection, and hold anything unsupported.",
+      "Use approved Equinix Fabric and interconnection language. Flag any gaps.",
     botMessage:
       "Draft ready. Unsupported points are open items, and the send is held for your approval.",
   },
@@ -65,10 +65,10 @@ export const HERO_JOBS = [
     account: "Account selected by the seller",
     signal: "Seller requests a review of approved deal context",
     workCopy:
-      "Organizing approved deal context, decisions, and open items into a review artifact.",
-    result: "Deal review artifact ready",
+      "Organizing approved deal context, decisions, and open items into a review summary.",
+    result: "Deal review summary ready",
     userMessage:
-      "Organize the approved deal context, decisions, and gaps into a review artifact.",
+      "Organize the approved deal context, decisions, and gaps into a review summary.",
     botMessage:
       "Review ready. Unresolved items are called out for your decision.",
   },
@@ -81,7 +81,7 @@ export const HERO_JOBS = [
       "Reviewing approved opportunity context and drafting questions for seller review.",
     result: "Opportunity review ready",
     userMessage:
-      "Review the approved opportunity context and draft the next questions without inventing activity or outcomes.",
+      "Review approved opportunity context. Draft questions without assuming outcomes.",
     botMessage:
       "Review ready. Next questions and context gaps are labeled for your approval.",
   },
@@ -92,9 +92,9 @@ export const HERO_JOBS = [
     signal: "Approved account context calls for a renewal review",
     workCopy:
       "Preparing a renewal review from approved context and clearly labeling open questions.",
-    result: "Renewal review artifact ready",
+    result: "Renewal review summary ready",
     userMessage:
-      "Prepare a renewal review using approved context and frame relevant questions around Serve Better and Run Simpler.",
+      "Prepare a renewal review from approved context for Serve Better and Run Simpler.",
     botMessage:
       "Review ready. Every open question is labeled for the seller.",
   },
@@ -104,12 +104,12 @@ export const HERO_JOBS = [
     account: "Account selected by the seller",
     signal: "Seller requests a sourced comparison",
     workCopy:
-      "Separating approved product evidence, public sources, and hypotheses in a comparison draft.",
+      "Separating approved product evidence, public sources, and assumptions in a comparison draft.",
     result: "Sourced comparison draft ready",
     userMessage:
-      "Build a comparison from approved product sources and dated public sources, keeping evidence separate from hypotheses.",
+      "Compare approved and dated public sources. Label all assumptions.",
     botMessage:
-      "Comparison ready. Evidence and hypotheses are clearly separated.",
+      "Comparison ready. Evidence and assumptions are clearly separated.",
   },
   {
     name: "Sales Chief of Staff",
@@ -120,7 +120,7 @@ export const HERO_JOBS = [
       "Turning approved priorities into a review plan and holding unsupported product fit as gaps.",
     result: "Priority plan ready for review",
     userMessage:
-      "Turn the approved priorities into a review plan covering the portal, SCE, and Distributed AI Hub only where supported.",
+      "Plan the approved priorities. Include product fit only when supported.",
     botMessage:
       "Plan ready. Unsupported product fit remains labeled as a gap.",
   },

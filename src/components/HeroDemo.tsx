@@ -186,8 +186,8 @@ export function HeroDemo() {
         <h1>The agents that work while your sellers sell.</h1>
         <p className="hero-intro">
           Grok Bot starts from approved sales signals, works in the background,
-          and prepares drafts for seller review. Nothing sends without the
-          seller.
+          and prepares drafts for seller review. Nothing is sent until the
+          seller approves it.
         </p>
 
         <div className="hero-phone-jobs" aria-label="Choose a Grok Bot job">
@@ -215,6 +215,9 @@ export function HeroDemo() {
       </div>
 
       <aside className="hero-bot-demo" aria-label="Live Grok Bot phone demo">
+        <p className="sr-only" aria-live="polite">
+          {job.name} Agent selected.
+        </p>
         <div className="hero-phone">
           <div className="hero-phone-notch" aria-hidden="true" />
 
@@ -240,13 +243,12 @@ export function HeroDemo() {
           <div
             key={job.name}
             className="hero-phone-thread"
-            aria-live="polite"
             aria-label={`${job.name} Agent thread`}
           >
             <article className="hero-phone-work">
               <p className="hero-phone-work-label">
                 <span aria-hidden="true" />
-                New signal detected
+                New approved signal
               </p>
               <p className="hero-phone-work-meta">
                 <span>Account</span>

@@ -719,7 +719,7 @@ button:active:not(:focus-visible),
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  color: #8c8c92;
+  color: #626269;
   font-size: 0.53rem;
   font-weight: 500;
 }
@@ -784,7 +784,7 @@ button:active:not(:focus-visible),
 }
 
 .hero-phone-work-meta span {
-  color: #9a9a9f;
+  color: #67676d;
 }
 
 .hero-phone-work .hero-phone-work-copy {
@@ -857,7 +857,7 @@ button:active:not(:focus-visible),
   padding: 0.48rem 0.58rem;
   border: 1px solid #dedee1;
   border-radius: 999px;
-  color: #aaaab0;
+  color: #707078;
   background: #fff;
   font-size: 0.52rem;
   text-overflow: ellipsis;
