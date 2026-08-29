@@ -2,6 +2,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   devIndicators: false,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.equinix.com",
+        pathname:
+          "/microfrontends/console/static/images/logos/eqx-brand-horizontal.svg",
+      },
+    ],
+  },
   transpilePackages: ["vgpu", "@vgpu/core", "@vgpu/wgsl"],
   turbopack: {
     rules: {

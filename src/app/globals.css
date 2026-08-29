@@ -338,6 +338,15 @@ button:active:not(:focus-visible),
   height: var(--brand-h);
 }
 
+.brand-equinix-fallback {
+  color: #ed1c24;
+  font-family: Arial, sans-serif;
+  font-size: var(--brand-h);
+  font-weight: 800;
+  letter-spacing: -0.07em;
+  line-height: 1;
+}
+
 .brand-sxai {
   height: calc(var(--brand-h) * 0.68);
   max-width: calc(var(--brand-h) * 8);
